@@ -1,5 +1,9 @@
 # CCNet_PyTorch
-Implementation of  [CCNet: Criss-Cross Attention for Semantic Segmentation](http://cn.arxiv.org/pdf/1811.11721.pdf)
+
+- 论文链接：[CCNet: Criss-Cross Attention for Semantic Segmentation](http://cn.arxiv.org/pdf/1811.11721.pdf)
+
+- CCNet网络结构图：
+![](https://blog-1258986886.cos.ap-beijing.myqcloud.com/paper/18-3.jpg)
 
 ## Installation
 - 环境: Python3.6, Pytorch1.0
