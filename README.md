@@ -7,6 +7,9 @@
 
 ## Installation
 - 环境: Python3.6, Pytorch1.0
-- CCNet网络代码: CC.py, ccnet.py, utils
+- CCNet网络代码: CC.py, ccnet.py
 
-## 数据集介绍
+## 实验数据集介绍
+
+
+## 实验版本及结果记录
