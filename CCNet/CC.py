@@ -2,9 +2,16 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn import Softmax
+
+
+
 def INF(B,H,W):
      return -torch.diag(torch.tensor(float("inf")).cuda(1).repeat(H),0).unsqueeze(0).repeat(B*W,1,1)
+
+
+
 class CC_module(nn.Module):
+     
     def __init__(self,in_dim):
         super(CC_module, self).__init__()
         self.query_conv = nn.Conv2d(in_channels=in_dim, out_channels=in_dim//8, kernel_size=1)
@@ -13,6 +20,7 @@ class CC_module(nn.Module):
         self.softmax = Softmax(dim=3)
         self.INF = INF
         self.gamma = nn.Parameter(torch.zeros(1))
+          
     def forward(self, x):
         m_batchsize, _, height, width = x.size()
         proj_query = self.query_conv(x)
