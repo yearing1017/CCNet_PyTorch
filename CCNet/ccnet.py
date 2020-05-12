@@ -12,7 +12,7 @@ import sys, os
 
 #from cc_attention import CrissCrossAttention 
 from .CC import CC_module as CrissCrossAttention 
-from .utils.pyt_utils import load_model
+#from .utils.pyt_utils import load_model
 
 #from Synchronized.sync_batchnorm import SynchronizedBatchNorm2d as SyncBN
 BatchNorm2d = nn.BatchNorm2d#SyncBN#functools.partial(InPlaceABNSync, activation='identity')
