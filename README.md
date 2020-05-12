@@ -7,7 +7,9 @@
 
 ## 实验版本简介
 - 环境: Python3.6, Pytorch1.0
+- 各版本通用代码: MyData_kfold.py, MIouv0217.py, predict.py
 - CCNet0403代码: CC.py, ccnet.py, train_kfold.py
+- CCNet0509代码: CC.py, ccnet.py, ccnet_v3_0509.py, train_cc_v3_0509.py 
 
 ## 实验数据集介绍
 - 一副无人机拍摄的高分辨率矿区影像图
