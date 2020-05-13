@@ -21,6 +21,10 @@
 - [MIoUData.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/MIoUData.py): 为计算MIoU载入label和预测数据
 - [MIouv0217.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/MIouv0217.py): 计算Acc、MIoU等指标的代码，需使用MIoUData.py载入的数据
 - [predict.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/predict.py): 使用训练好的模型进行预测，给预测结果涂色 
+- [CC.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/CCNet/CC.py): CCNet中Criss-Cross Attention模块的实现
+- [ccnet.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/CCNet/ccnet.py): 整个CCNet的实现代码，基于resnet
+- [train_kfold.py](): CCNet0403
+- []()
 
 ## 实验版本及结果记录
 - CCNet_v0403版本：[参考代码](https://github.com/speedinghzl/CCNet)，使用了辅助loss，对结果的两个输出分别求loss，得到的模型效果很差。
