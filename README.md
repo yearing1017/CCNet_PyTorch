@@ -17,6 +17,9 @@
 - 进行裁剪后的320 x 320的图像与label数据
 
 ## 实验代码说明
+- [MyData_kfold.py](): 数据载入代码，采用k折交叉验证载入数据
+- [MIouv0217.py](): 计算Acc、MIoU等指标的代码，需使用MIoUData.py载入的数据
+- [predict.py](): 使用训练好的模型进行预测，给预测结果涂色 
 
 ## 实验版本及结果记录
 - CCNet_v0403版本：[参考代码](https://github.com/speedinghzl/CCNet)，使用了辅助loss，对结果的两个输出分别求loss，得到的模型效果很差。
