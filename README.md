@@ -28,5 +28,6 @@
 - [predict.py](https://github.com/yearing1017/CCNet_PyTorch/blob/master/predict.py)：使用训练好的模型进行预测，给预测结果涂色 
 
 ## 实验版本及结果记录
-- CCNet_v0403版本：[参考代码](https://github.com/speedinghzl/CCNet)，使用了辅助loss，对结果的两个输出分别求loss，得到的模型效果很差。
+- CCNet参考版本：[参考代码](https://github.com/speedinghzl/CCNet)，使用了辅助loss，对结果的两个输出拼接成list，分别求loss，得到的模型效果很差。
   - ps：应该是自己对该代码实验的理解有误，后期改为论文中的样例，将x与x_dsn进行cat，再分割
+- CCNet_0403版本：放弃辅助loss，
