@@ -30,9 +30,7 @@
 ## 实验版本及结果记录
 - CCNet参考版本：[参考代码](https://github.com/speedinghzl/CCNet)，使用了辅助loss，对结果的两个输出拼接成list，分别求loss，得到的模型效果很差。
   - ps：应该是自己对该代码实验的理解有误，后期改为论文中的样例，将x与x_dsn进行cat，再分割
-  
 - CCNet_0403版本：放弃辅助loss，将两个输出cat，再进行分割，效果还算可以，实验结果如下表
-
 - CCNet_v3_0509版本：将CCA模块加入deeplabv3模块，与aspp模块并行，cat两者的输出，再分割，结果如下
 
 |     版本&指标    |  Acc   |  MIoU  | Kappa  |  地面  |  房屋  |  道路  |  车辆  |
@@ -41,3 +39,8 @@
 | CCnet0509 | 0.9593 | 0.7947 | 0.8593 | 0.9863 | 0.8818 | 0.8856 | 0.6740 |
 
 ## 实验预测结果与GT对比
+- CCNet0403版本，左至右为原图、GT、predict
+![](https://blog-1258986886.cos.ap-beijing.myqcloud.com/yearing1017/ccnet0506.jpg)
+
+- CCNet_v3_0509版本，左至右为原图、GT、predict
+![](https://blog-1258986886.cos.ap-beijing.myqcloud.com/yearing1017/ccnet0509.jpg)
